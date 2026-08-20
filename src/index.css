@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: oklch(98% 0.005 195);
+  color: oklch(25% 0.01 195);
+  font-family: "IBM Plex Sans", sans-serif;
+}

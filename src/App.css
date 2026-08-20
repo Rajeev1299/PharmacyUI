@@ -1,0 +1,310 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 64px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.app-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid oklch(88% 0.01 195);
+}
+
+.app-eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: oklch(50% 0.05 195);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.app-header h1 {
+  font-family: "Newsreader", serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1;
+  margin: 0;
+  color: oklch(22% 0.02 195);
+  letter-spacing: -0.01em;
+}
+
+.app-header button {
+  background: oklch(38% 0.08 195);
+  color: white;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 2px oklch(38% 0.08 195 / 0.2);
+}
+
+.app-header button:hover {
+  background: oklch(32% 0.09 195);
+}
+
+.search-wrap {
+  position: relative;
+  max-width: 480px;
+  margin-bottom: 22px;
+}
+
+.search-wrap svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: oklch(55% 0.02 195);
+}
+
+.search-box {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px 12px 40px;
+  border: 1px solid oklch(85% 0.01 195);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  background: white;
+  color: oklch(25% 0.01 195);
+}
+
+.legend {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: oklch(45% 0.02 195);
+  font-weight: 500;
+}
+
+.legend-swatch {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.legend-swatch.row-expiring {
+  background: oklch(88% 0.07 20);
+}
+
+.legend-swatch.row-low-stock {
+  background: oklch(90% 0.06 95);
+}
+
+.table-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid oklch(90% 0.01 195);
+  overflow: hidden;
+  box-shadow: 0 1px 3px oklch(30% 0.02 195 / 0.05);
+}
+
+.medicine-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.medicine-table th {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: oklch(45% 0.02 195);
+  text-align: left;
+  padding: 14px 24px;
+  border-bottom: 1px solid oklch(90% 0.01 195);
+}
+
+.medicine-table th:last-child {
+  text-align: right;
+}
+
+.medicine-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid oklch(93% 0.01 195);
+  font-size: 15px;
+  color: oklch(30% 0.02 195);
+}
+
+.medicine-table td:first-child {
+  font-weight: 600;
+  color: oklch(20% 0.02 195);
+}
+
+.medicine-table td:nth-child(3),
+.medicine-table td:nth-child(4),
+.medicine-table td:nth-child(5) {
+  font-variant-numeric: tabular-nums;
+  font-size: 14px;
+  color: oklch(42% 0.02 195);
+}
+
+.row-expiring {
+  background: oklch(96% 0.025 20);
+}
+
+.row-low-stock {
+  background: oklch(96.5% 0.02 95);
+}
+
+.actions-cell {
+  text-align: right;
+}
+
+.actions-cell button {
+  margin-left: 8px;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "IBM Plex Sans", sans-serif;
+  cursor: pointer;
+}
+
+.btn-sell {
+  background: white;
+  color: oklch(38% 0.08 195);
+  border: 1px solid oklch(38% 0.08 195 / 0.35);
+}
+
+.btn-sell:hover {
+  background: oklch(97% 0.02 195);
+}
+
+.btn-record {
+  background: oklch(94% 0.005 195);
+  color: oklch(30% 0.02 195);
+  border: 1px solid oklch(88% 0.01 195);
+}
+
+.btn-record:hover {
+  background: oklch(90% 0.01 195);
+}
+
+.empty-state {
+  padding: 24px;
+  color: oklch(50% 0.02 195);
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: oklch(20% 0.01 195 / 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: white;
+  border-radius: 14px;
+  width: 420px;
+  max-width: 90vw;
+  padding: 32px;
+  box-shadow: 0 20px 60px oklch(20% 0.02 195 / 0.3);
+}
+
+.modal-wide {
+  width: 580px;
+}
+
+.modal h2 {
+  font-family: "Newsreader", serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0 0 22px;
+  color: oklch(20% 0.02 195);
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 600;
+  color: oklch(45% 0.02 195);
+  gap: 6px;
+}
+
+.modal input,
+.modal textarea {
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  border: 1px solid oklch(85% 0.01 195);
+  border-radius: 6px;
+  color: oklch(25% 0.01 195);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 22px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "IBM Plex Sans", sans-serif;
+  cursor: pointer;
+  border: 1px solid oklch(85% 0.01 195);
+  background: white;
+  color: oklch(30% 0.02 195);
+}
+
+.modal-actions button[type="submit"] {
+  background: oklch(38% 0.08 195);
+  color: white;
+  border: none;
+}
+
+.modal-actions button[type="submit"]:hover {
+  background: oklch(32% 0.09 195);
+}
+
+.error-text {
+  color: oklch(50% 0.18 25);
+  font-size: 13px;
+}
+
+.stock-hint {
+  font-size: 13px;
+  color: oklch(45% 0.02 195);
+  margin-top: -6px;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.sales-table th {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
